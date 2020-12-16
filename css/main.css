@@ -253,6 +253,10 @@ p{
         margin-top: 10%;
     }
 
+    .jl-display-text p{
+       margin: 0 0 10px 0;
+    }
+
     #jl-home{
         background-image: url(../img/joao-lemon-designer-home.png);
         background-repeat: no-repeat;
@@ -401,5 +405,51 @@ p{
 
 .jl-fade-out{
     animation: fadeOut 2s forwards ease-out;
+}
+
+
+/* classes botões */
+
+.jl-btn {
+    display: table;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 45px;
+    font-weight: 600;
+    border: none;
+    transition: all 200ms ease;
+}
+
+.jl-btn-medium {
+    height: 38px;
+    padding: 0 27px;
+    border-radius: 19px;
+    font-size: 14px;
+    cursor: pointer;
+    
+}
+
+.jl-btn-large {
+    height: 45px;
+    padding: 0 35px;
+    border-radius: 23px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.jl-btn-large:hover{
+    background-color: rgb(6, 135, 55);
+    color: white;
+}
+
+.jl-btn-dark{
+    background-color: #151515;
+    color: var(--primary-color);
+}
+
+.jl.jl-btn-dark:hover{
+    background-color: #212121;
+    color: #fff;
 }
 
