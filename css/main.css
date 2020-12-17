@@ -10,7 +10,8 @@
     --primary-color: #2ccb69;
     --text-primary: #bcbcbc;
     --dark-color: #1c1c1c;
-    --black-color: #000
+    --black-color: #000;
+    --grey-color: #5c5555;
 }
 
 /* body{
@@ -254,7 +255,7 @@ p{
     }
 
     .jl-display-text p{
-       margin: 0 0 10px 0;
+       margin: 0 0 15px 0;
     }
 
     #jl-home{
@@ -313,6 +314,67 @@ p{
         background-color: black;
         animation: lineDown 1.5s infinite ease-out;
         transform-origin: top center;
+    }
+
+
+    /* modal */
+
+    .jl-overlay{
+        width: 100%;
+        height: 100vh;
+        display: block;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        background-color: rgba(44, 203, 105, 0.95)
+    }
+
+    .jl-modal{
+        background-color: var(--dark-color);
+        width: 800px;
+        display: table;
+        position: fixed;
+        padding: 30px;
+        border-radius: 0 30px 30px;
+        top: 15%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 1200;
+
+    }
+
+    .jl-modal-header {
+        width: 100%;
+        display: table;
+        position: relative;
+    }
+
+    .jl-close-modal{
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        border-radius: 50%;
+        text-align: center;
+        line-height: center;
+        cursor: pointer;
+        top: -15px;
+        right: -15px;
+        border: none;
+        background-color: var(--grey-color);
+        color: var(--primary-color);
+    }
+
+    .jl-modal-header h1{
+        color: var(--primary-color);
+        font-family: 'Abril Fatface', cursive;
+        font-weight: 400;
+        
+    }
+
+    .jl-modal-body p{
+        color: var(--text-primary);
     }
 
 
