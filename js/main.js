@@ -26,3 +26,19 @@ btnContact.addEventListener('click', function(){
 
 
 
+// MODAL 
+
+const toggleModal = document.querySelectorAll('.jl-toggle-modal')
+
+//abrindo e fechando o modal de orçamento
+
+for(var i = 0; i < toggleModal.length; i++ ){
+    toggleModal[i].addEventListener('click', function(){
+        var overlay = document.querySelector('.jl-overlay')
+        var modalOrcamento = document.querySelector('#jl-modal-orcamento')
+
+        overlay.classList.toggle('jl-is-open')
+        modalOrcamento.classList.toggle('jl-is-open')
+        
+    })
+}
