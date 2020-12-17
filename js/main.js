@@ -39,6 +39,7 @@ for(var i = 0; i < toggleModal.length; i++ ){
 
         overlay.classList.toggle('jl-is-open')
         modalOrcamento.classList.toggle('jl-is-open')
+        modalOrcamento.classList.toggle('jl-slide-top-in')
         
     })
 }

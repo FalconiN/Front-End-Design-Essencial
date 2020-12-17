@@ -28,7 +28,14 @@ p, label{
     to{
         opacity: 0;
     }
+}
 
+
+@keyframes slideTopIn{
+    to{
+        top: 15%;
+        opacity: 1;
+    }
 }
 
 @keyframes lineDown{
@@ -338,7 +345,7 @@ p, label{
         position: fixed;
         padding: 30px;
         border-radius: 0 30px 30px;
-        top: 15%;
+        top: -100%;
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -495,6 +502,12 @@ p, label{
 .jl-fade-out{
     animation: fadeOut 2s forwards ease-out;
 }
+
+.jl-slide-top-in {
+    animation: slideTopIn 0.6s forwards cubic-bezier(.17,.67,.83,.67);
+}
+
+
 
 
 /* classes botões */
