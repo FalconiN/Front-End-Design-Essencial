@@ -12,6 +12,7 @@
     --dark-color: #1c1c1c;
     --black-color: #000;
     --grey-color: #5c5555;
+    --form-color: #2f2f2f;
 }
 
 /* body{
@@ -19,7 +20,7 @@
     font-family: 'Open Sans', sans-serif;
 } */
 
-p{
+p, label{
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -345,10 +346,25 @@ p{
 
     }
 
-    .jl-modal-header {
+    .jl-modal-header, .jl-modal-body, .jl-form{
         width: 100%;
         display: table;
         position: relative;
+    }
+
+    .jl-field, .jl-textarea{
+        width: 100%;
+        background-color: var(--form-color);
+        border-radius: 4px;
+        color: white;
+        border: none;
+        font-size: 16px;
+        text-indent: 15px;
+        margin-bottom: 15px;
+    }
+
+    .jl-field{
+        height: 45px;
     }
 
     .jl-close-modal{
@@ -376,6 +392,17 @@ p{
     .jl-modal-body p{
         color: var(--text-primary);
     }
+
+    .jl-form label{
+        margin-bottom: 10px;
+        color: var(--text-primary);
+        font-size: 16px;
+        display: inline-block;
+    }
+
+    /* .jl-textarea {
+        margin-top: 15px;
+    } */
 
 
 }
@@ -499,6 +526,10 @@ p{
     background-color: var(--primary-color);
     cursor: pointer;
 }
+.jl-btn-block{
+    display: block;
+    width: 100%;
+}
 
 .jl-btn-large:hover{
     background-color: rgb(6, 135, 55);
@@ -513,5 +544,15 @@ p{
 .jl.jl-btn-dark:hover{
     background-color: #212121;
     color: #fff;
+}
+
+.jl-btn-green{
+    background-color: var(--primary-color);
+}
+
+/* classes utilitárias */
+
+.jl-mar-top-15{
+    margin-top: 15px;
 }
 
