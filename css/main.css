@@ -33,7 +33,7 @@ p, label{
 
 @keyframes slideTopIn{
     to{
-        top: 15%;
+        top: 10%;
         opacity: 1;
     }
 }
@@ -324,6 +324,75 @@ p, label{
         transform-origin: top center;
     }
 
+    /* Edição da Home portfolio */
+
+    .jl-portfolio-navigator{
+        width: 145px;
+        height: 400px;
+        display: table;
+        position: absolute;
+        left: 15px;
+        top: 26vh;
+    }
+
+    .jl-item-counter {
+        width: 100%;
+        height: 90px;
+        display: block;
+        margin-bottom: 60px;
+        position: relative;
+    }
+
+    .jl-item-counter::before {
+        content: "";
+        display: block;
+        width: 35px;
+        height: 100%;
+        background-color: var(--dark-color);
+        position: absolute;
+        top: 4px;
+        left: 1px;
+    }
+    
+    .jl-item-counter span{
+        color: var(--primary-color);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 120px;
+        font-weight: 600;
+        line-height: 90px;
+    }
+
+
+    .jl-item-navigator {
+        width: 100%;
+        display: table;
+    }
+
+    .jl-item-navigator a{
+        width: 20px;
+        height: 1px;
+        display: block;
+        margin: 0 0 60px 35px;
+        background-color: var(--text-primary);
+    }
+
+    .jl-item-navigator a.jl-item-active{
+        width: 90px;
+        background-color: var(--primary-color);
+    }
+
+    .jl-item-navigator a:last-child{
+        margin-bottom: 30px;
+    }
+
+    .jl-portifolio-next-prev {
+        width: 100%;
+        height: 45px;
+        display: block;
+        background-color: var(--form-color);
+        border-radius: 0 23px 23px 0;
+    }
+
 
     /* modal */
 
@@ -480,6 +549,7 @@ p, label{
 
 .jl-full-height {
     height: 100vh;
+    position: relative;
 }
 
 
@@ -569,3 +639,6 @@ p, label{
     margin-top: 15px;
 }
 
+.jl-no-padding {
+    padding: 0 !important;
+}

@@ -32,8 +32,8 @@ const toggleModal = document.querySelectorAll('.jl-toggle-modal')
 
 //abrindo e fechando o modal de orçamento
 
-for(var i = 0; i < toggleModal.length; i++ ){
-    toggleModal[i].addEventListener('click', function(){
+for(var i = 0; i < toggleModal.length; i++ ) {
+    toggleModal[i].addEventListener('click', function() {
         var overlay = document.querySelector('.jl-overlay')
         var modalOrcamento = document.querySelector('#jl-modal-orcamento')
 
@@ -43,3 +43,15 @@ for(var i = 0; i < toggleModal.length; i++ ){
         
     })
 }
+
+
+// WAYPOINTS - Animnado elementos on scroll
+var myScrollDown = document.querySelector('.jl-scroll') 
+
+var waypoint = new Waypoint({
+    element: myScrollDown,
+    handler: function() {
+      myScrollDown.classList.toggle('jl-fade-out')
+    },
+    offset: '80%'
+  })
