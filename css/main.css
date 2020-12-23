@@ -393,7 +393,7 @@ p, label{
         justify-content: space-evenly;
         align-items: center;
         background-color: var(--form-color);
-        border-radius: 0 23px 23px 0;
+        border-radius: 23px;
     }
 
     .jl-item-prev, .jl-item-next{
@@ -418,6 +418,28 @@ p, label{
         font-size: 2rem;
         color: var(--primary-color);
         text-align: center;
+    }
+
+    .jl-slider-container {
+        background-color: white;
+        display: block;
+        overflow: hidden;
+    }
+
+    .jl-slider-list {
+        width: auto;
+        height: 700px;
+        display: block;
+        background-color: deeppink;
+        list-style: none;
+    }
+
+
+    .jl-slider-item{
+        display: block;
+        height: 500px;
+        float: left;
+        
     }
 
 
@@ -668,4 +690,35 @@ p, label{
 
 .jl-no-padding {
     padding: 0 !important;
+}
+
+
+.jl-no-radios-left {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.jl-no-radios-right {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+.red{
+    background: red;
+}
+
+.green{
+    background: green;
+}
+
+.yellow{
+    background: yellow;
+}
+
+.purple{
+    background: purple ;
+}
+
+.blue{
+    background: blue;
 }
