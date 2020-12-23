@@ -378,7 +378,6 @@ p, label{
     }
 
     .jl-item-navigator a.jl-item-active{
-        width: 90px;
         background-color: var(--primary-color);
     }
 
