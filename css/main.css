@@ -126,7 +126,7 @@ p, label{
         height: 110px;
         display: block;
         background: transparent;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
     }
@@ -422,14 +422,15 @@ p, label{
     }
 
     .jl-slider-container {
+        /* width: 100%; */
         background-color: var(--dark-color);
         display: block;
         overflow: hidden;
     }
 
     .jl-slider-list {
-        width: auto;
-        height: 700px;
+        /* width: 100%; */
+        /* height: 700px; */
         display: block;
         list-style: none;
     }
@@ -460,6 +461,20 @@ p, label{
         margin-bottom: 15px;
     }
 
+    .jl-portfolio-item-thumb {
+        width: 100%;
+        background-color: #2c2c2c;
+        display: table;
+        padding: 65px 0;
+    }
+
+    .jl-portfolio-item-thumb  img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        left: -45px;
+    }
 
     /* modal */
 
