@@ -439,11 +439,11 @@ p, label{
         display: block;
         height: 500px;
         float: left;
-        margin-top: calc(26vh - 75px);
+        margin-top: calc(26vh - 75px); 
     }
 
     .jl-portfolio-item-info{
-        width: 100%;
+        width: calc(100%- 45px);
         display: table;
         margin-top: 73px;
     }
@@ -463,9 +463,20 @@ p, label{
 
     .jl-portfolio-item-thumb {
         width: 100%;
-        background-color: #2c2c2c;
         display: table;
         padding: 65px 0;
+        position: relative;
+    }
+
+    jl-portifolio-box{
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: #2c2c2c;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: scaleX(0);
     }
 
     .jl-portfolio-item-thumb  img {

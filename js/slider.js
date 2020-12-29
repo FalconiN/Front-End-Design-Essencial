@@ -53,7 +53,8 @@ var nextSliderAnim = function(){
 
     anime({
         targets: sliderList,
-        translateX: sliderPos
+        translateX: sliderPos,
+        easing: 'cubicBezier(0,1.01,.32,1)'
     })
 
 }
@@ -68,7 +69,8 @@ var prevSliderAnim = function(){
 
     anime({
         targets: sliderList,
-        translateX: sliderPos
+        translateX: sliderPos,
+        easing: 'cubicBezier(0,1.01,.32,1)'
     })
 }
 
@@ -103,7 +105,6 @@ var counterRemove = function(){
 }
 
 // SET ACTIVE NAV
-
 var setActiveNav = function(){
     for (var nv = 0; nv < navItems.length; nv++){
         let myNavNum = parseInt(navItems[nv].getAttribute('data-nav'))
@@ -119,6 +120,17 @@ var setActiveNav = function(){
     }
 }
 
+
+var setActiveSlider = function(){
+    for (var sl = 0; sl < sliderItem.length; sl++){
+        let mySlideNun = parseInt(sliderItem[sl].getAttribute('data-slide'))
+
+        if (mySlideNun === currentCounter){
+            sliderItem[sl].classList.add('jl-slide-active')
+        }
+    }
+}
+
 var changeActive = function(){
     for(var rm = 0; rm < navItems.length; rm++){
         navItems[rm].classList.remove('jl-item-active')
@@ -128,7 +140,16 @@ var changeActive = function(){
         })
     }
 
+    for(var rms = 0; rms < sliderItem.length; rms++){
+        sliderItem[rms].classList.remove('jl-slide-active')
+        anime({
+            targets: sliderItem[rms],
+            width: 20
+        })
+    }  
+
     setActiveNav()
+    setActiveSlider()
 }
 
 // Actions
