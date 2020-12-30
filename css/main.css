@@ -488,8 +488,14 @@ p, label{
     .jl-portfolio-item-thumb {
         width: 100%;
         display: table;
-        padding: 65px 0;
+        padding: 65px 0 18px 0;
         position: relative;
+    }
+
+    .jl-portfolio-item-thumb >button{
+        margin-top: 16px;
+        margin-right: 45px;
+        float: right;
     }
 
 
@@ -722,6 +728,15 @@ p, label{
     font-weight: 600;
     border: none;
     transition: all 200ms ease;
+    position: relative;
+}
+
+.jl-btn ion-icon{
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-left: 5px;
+    
 }
 
 .jl-btn-medium {
@@ -730,6 +745,7 @@ p, label{
     border-radius: 19px;
     font-size: 14px;
     cursor: pointer;
+    line-height: 38px;
     
 }
 
