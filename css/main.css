@@ -147,9 +147,10 @@ p, label{
         height: 110px;
         display: block;
         background: transparent;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
+        z-index: 900;
     }
 
     .jl-logo{
