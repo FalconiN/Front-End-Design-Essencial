@@ -31,12 +31,33 @@ p, label{
 }
 
 
+@keyframes fadeFromLeft{
+    to{
+        left: 0;
+        opacity: 1;
+    }
+}
+
+
 @keyframes slideTopIn{
     to{
         top: 10%;
         opacity: 1;
     }
 }
+
+@keyframes scaleRight{
+    to{
+        transform: scaleX(1);
+    }
+}
+
+@keyframes scaleUp{
+    to{
+        transform: scale(1);
+    }
+}
+
 
 @keyframes lineDown{
     0%{
@@ -446,6 +467,9 @@ p, label{
         width: calc(100%- 45px);
         display: table;
         margin-top: 73px;
+        position: relative;
+        opacity: 0;
+        left: -65px;
     }
 
     .jl-portfolio-item-info h1{
@@ -468,7 +492,17 @@ p, label{
         position: relative;
     }
 
-    jl-portifolio-box{
+
+    .jl-portfolio-item-thumb img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        left: -45px;
+        transform: scale(0);
+    }
+
+    .jl-portfolio-box {
         width: 100%;
         height: 100%;
         display: block;
@@ -477,14 +511,7 @@ p, label{
         top: 0;
         left: 0;
         transform: scaleX(0);
-    }
-
-    .jl-portfolio-item-thumb  img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        position: relative;
-        left: -45px;
+        transform-origin: right;
     }
 
     /* modal */
@@ -666,10 +693,22 @@ p, label{
     animation: fadeOut 2s forwards ease-out;
 }
 
+.jl-scale-right{
+    animation: scaleRight 0.7s 0.2s forwards cubic-bezier(0,1.01,.32,1);
+}
+
+.jl-scale-up{
+    animation: scaleUp 0.5s 0.4s forwards cubic-bezier(0,1.01,.32,1);
+}
+
 .jl-slide-top-in {
     animation: slideTopIn 0.6s forwards cubic-bezier(.17,.67,.83,.67);
 }
 
+
+.jl-fade-from-left {
+    animation: fadeFromLeft 2s 0.5s forwards cubic-bezier(0,1.01,.32,1);
+}
 
 
 
