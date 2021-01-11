@@ -3,7 +3,7 @@
 // Declarando variáveis do slider
 const sliderContainer = document.querySelector('.jl-slider-container')
 const sliderList = document.querySelector('.jl-slider-list')
-const sliderItem = document.querySelectorAll('.jl-slider-item')
+const sliderItem = document.querySelectorAll('.jl-portfolio-item')
 var sliderListWidth = null
 
 var prev = document.querySelector('.jl-item-prev')

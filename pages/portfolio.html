@@ -13,7 +13,218 @@
 </head>
 <body>
 
+    <div class="jl-preloader">
+        <div class="jl-preloader-inner">
+            <img src="../img/nave-espacial.svg" alt="Loader">
+            <p>Aguarde um pouquinho. Estamos viajando pelo espaço</p>
+        </div>
+    </div>
+
+    <div class="jl-overlay jl-toggle-modal"></div>
+
+    <div class="jl-modal" id="jl-modal-orcamento">
+        <div class="jl-modal-header">
+            <h1>Solicite um Orçamento</h1>
+
+            <button class="jl-close-modal jl-toggle-modal">
+                X
+            </button>
+        </div>
+
+        <div class="jl-modal-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, facilis.</p>
+                </div>
+            </div>
+
+            <div class="row jl-mar-top-15">
+                <div class="col-sm-12">
+                    <form class="jl-form">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" id="jl-nome" class="jl-field">
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="jl-email" class="jl-field">
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" name="telefone" id="jl-telefone" class="jl-field">
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <label for="site">Site</label>
+                                <input type="text" name="site" id="jl-site" class="jl-field">
+                            </div>
+                            <div class="col-sm-12 col-md-12">
+                                <label for="descricao">Descreva abaixo um pouco sobre o projeto que deseja</label>
+                                <textarea name="descricao" rows="8" id="jl-descricao" class="jl-textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end">
+                            <div class="col-sm-12 col-md-6">
+                                <button class="jl-btn jl-btn-large jl-btn-green jl-btn-block">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     
+    <header class="jl-topbar">
+        <div class="jl-logo">
+            <img src="../img/logo.svg" alt="Logo">
+        </div>
+
+        <nav class="jl-menu">
+            <a href="../index.html">Home</a>
+            <a href="#">Portfólio</a>
+            <a href="#">Sobre</a>
+        </nav>
+    </header>
+
+    <div class="jl-contact-info">
+        <div class="jl-contact-info-inner">
+            <h2>Contato</h2>
+            <p>hello@natan.com.br</p>
+            <p>+55 (27) 99663-8245</p>
+
+            <div class="jl-social-links">
+                <a href="https://www.linkedin.com/in/natan-falconi/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/NatanFalconi" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/natanfalconi/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="jl-corner">
+
+        </div>
+    </div>
+
+    <button class="jl-btn-contact"></button>
+
+    <div class="jl-page-wrapper">
+        <section class="container-fluid jl-section-offset-top">
+            <div class="row">
+                <div class="col-sm-11 offset-sm-1">
+                    <ul class="jl-portfolio-list">
+                        <li class="jl-portfolio-item jl-slide-active" data-slide="1">
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="jl-portfolio-item-info">
+                                        <h1 class="jl-title-large">Startup Rocketz Website</h1>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Ipsa, ut!</p>
+                                        <button class="jl-btn jl-btn-large jl-btn-green">Ver Projeto</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="jl-portfolio-item-thumb">
+                                        <div class="jl-portfolio-box"></div>
+                                        <img src="../img/thumb-1.jpg" alt="Startup Rocket">
+                                        <button class="jl-btn jl-btn-medium jl-btn-dark">Visite o site <ion-icon name="arrow-redo-outline"></ion-icon></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="jl-portfolio-item" data-slide="2">
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="jl-portfolio-item-info">
+                                        <h1 class="jl-title-large">Startup Rocketz Website</h1>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Ipsa, ut!</p>
+                                        <button class="jl-btn jl-btn-large jl-btn-green">Ver Projeto</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="jl-portfolio-item-thumb">
+                                        <div class="jl-portfolio-box"></div>
+                                        <img src="../img/thumb-2.jpg" alt="Startup Rocket">
+                                        <button class="jl-btn jl-btn-medium jl-btn-dark">Visite o site <ion-icon name="arrow-redo-outline"></ion-icon></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="jl-portfolio-item" data-slide="3">
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="jl-portfolio-item-info">
+                                        <h1 class="jl-title-large">Startup Rocketz Website</h1>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Ipsa, ut!</p>
+                                        <button class="jl-btn jl-btn-large jl-btn-green">Ver Projeto</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="jl-portfolio-item-thumb">
+                                        <div class="jl-portfolio-box"></div>
+                                        <img src="../img/thumb-3.jpg" alt="Startup Rocket">
+                                        <button class="jl-btn jl-btn-medium jl-btn-dark">Visite o site <ion-icon name="arrow-redo-outline"></ion-icon></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="jl-portfolio-item" data-slide="4">
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="jl-portfolio-item-info">
+                                        <h1 class="jl-title-large">Startup Rocketz Website</h1>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Ipsa, ut!</p>
+                                        <button class="jl-btn jl-btn-large jl-btn-green">Ver Projeto</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="jl-portfolio-item-thumb">
+                                        <div class="jl-portfolio-box"></div>
+                                        <img src="../img/thumb-4.jpg" alt="Startup Rocket">
+                                        <button class="jl-btn jl-btn-medium jl-btn-dark">Visite o site <ion-icon name="arrow-redo-outline"></ion-icon></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="jl-portfolio-item" data-slide="5">
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="jl-portfolio-item-info">
+                                        <h1 class="jl-title-large">Startup Rocketz Website</h1>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Ipsa, ut!</p>
+                                        <button class="jl-btn jl-btn-large jl-btn-green">Ver Projeto</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="jl-portfolio-item-thumb">
+                                        <div class="jl-portfolio-box"></div>
+                                        <img src="../img/thumb-5.jpg" alt="Startup Rocket">
+                                        <button class="jl-btn jl-btn-medium jl-btn-dark">Visite o site <ion-icon name="arrow-redo-outline"></ion-icon></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/768e5eb1d6.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js" integrity="sha512-Q4MHJkk3u8P63v1aX0I7jvo5AoMFi53HbxUBhURp8x7xrqD+nsHZrbBEQVObpqE+MAAVB/Ye9ZlKkM44a1q9WA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js" integrity="sha512-g6IhMPPqSSUgE+lYgBpdsXICK0fNhDlDDEuIbphNIKfPTYFD/1VcnxA+7pS9mibvzIb5SB0nNvii5M+yMwkcJA==" crossorigin="anonymous"></script>
+    <script src="../js/anime.min.js"></script>
+    <script src="../js/main.js"></script>
 
 </body>
 </html>
