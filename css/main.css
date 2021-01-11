@@ -551,6 +551,29 @@ p, label{
 
     .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-info{
         text-align: right;
+        margin-top: 48px;
+    }
+    
+    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-info button{
+        float: right;
+    }
+    
+    .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-info{
+        margin-left: 105px;
+        margin-top: 48px;
+    }
+
+    .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-thumb button{
+        float: left;
+        margin-left: 45px;
+    }
+
+    .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-thumb img{
+        left: 45px;
+    }
+
+    .jl-portfolio-list .jl-portfolio-item:nth-child(even) > .row {
+        flex-direction: row-reverse;
     }
 
     /* modal */
