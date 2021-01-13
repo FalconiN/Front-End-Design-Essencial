@@ -848,6 +848,14 @@ p, label{
     margin-top: 15px;
 }
 
+.jl-mar-bottom-15{
+    margin-bottom: 15px;
+}
+
+.jl-mar-bottom-30{
+    margin-bottom: 30px;
+}
+
 .jl-no-padding {
     padding: 0 !important;
 }
@@ -862,12 +870,30 @@ p, label{
     border-bottom-right-radius: 0;
 }
 
+.jl-title {
+    font-family: 'Abril Fatface', serif;
+    font-weight: normal;
+}
+
+.jl-subtitle{
+    font-family: 'Opens Sans', serif;
+    font-weight: bold;
+}
+
 .jl-title-large{
     font-size: 54px;
 }
 
 .jl-title-xlarge{
     font-size: 120px;
+}
+
+.jl-text-green {
+    color: var(--primary-color)
+}
+
+.jl-text-ligth {
+    color: var(--text-primary);
 }
 
 
