@@ -555,7 +555,7 @@ p, label{
 
     /*  EDIÇÃO DA PAGINA PORTFÓLIO */
     .jl-section-offset-top{
-        margin-top: 130px;
+        margin-top: 110px;
     }
 
     .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-info{
@@ -585,7 +585,42 @@ p, label{
         flex-direction: row-reverse;
     }
 
-    /* modal */
+
+    /* ============ Sobre =============== */
+
+
+    #jl-avatar-sobre img {
+        position: relative;
+        left: -15px;
+    }
+
+    .jl-page-list {
+        list-style: none;
+        font-family: 'Open Sans', serif;
+    }
+
+    .jl-page-list > li {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 15px;
+        padding-left: 20px;
+        position: relative;
+    }
+    .jl-page-list > li::before{
+        content: "";
+        width: 8px;
+        height: 8px;
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        top: 7px;
+        left: 0;
+        background-color: var(--primary-color);
+
+    }
+
+
+    /* ================== MODAL =================== */
 
     .jl-overlay{
         width: 100%;
@@ -860,6 +895,17 @@ p, label{
     padding: 0 !important;
 }
 
+.jl-box-img {
+    width: 100%;
+    display: table;
+}
+
+.jl-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 .jl-no-radios-left {
     border-top-left-radius: 0;
@@ -885,7 +931,7 @@ p, label{
 }
 
 .jl-title-xlarge{
-    font-size: 120px;
+    font-size: 90px;
 }
 
 .jl-text-green {
