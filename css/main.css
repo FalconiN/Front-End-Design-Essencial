@@ -623,7 +623,10 @@ p, label{
 
     .jl-hero {
         height: 500px;
-        background-color: green;
+        background-image: url('../pages/portfolio/img/hero.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         display: block;
     }
 
@@ -900,6 +903,10 @@ p, label{
 
 .jl-mar-bottom-30{
     margin-bottom: 30px;
+}
+
+.jl-pad-30 {
+    padding: 30px;
 }
 
 .jl-no-padding {
