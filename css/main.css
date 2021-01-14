@@ -619,6 +619,13 @@ p, label{
 
     }
 
+    /* ============ DETALHES =============== */
+
+    .jl-hero {
+        height: 500px;
+        background-color: green;
+        display: block;
+    }
 
     /* ================== MODAL =================== */
 
